@@ -1,5 +1,5 @@
 import React, { createContext, useState } from 'react';
-import { uuid } from 'uuid/dist';
+import { v1 as uuid } from 'uuid';
 
 export const BookContext = createContext();
 
