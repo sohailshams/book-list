@@ -1,16 +1,16 @@
 import React, { createContext, useState } from 'react';
-import uuid from 'uuid/v1';
+import { uuid } from 'uuid/dist';
 
 export const BookContext = createContext();
 
 export const BookContextProvider = (props) => {
   const [books, setBooks] = useState([
-    { title: 'name og the wind', auther: 'patrick rothfuss', id: 1 },
-    { title: 'booklist', auther: 'sohail shams', id: 2 },
+    { title: 'name og the wind', author: 'patrick rothfuss', id: 1 },
+    { title: 'booklist', author: 'sohail shams', id: 2 },
   ]);
 
   const addBook = (title, author) => {
-    setBooks([...bools, { titile, auther, id: uuid() }]);
+    setBooks([...books, { title, author, id: uuid() }]);
   };
 
   const removeBook = (id) => {
