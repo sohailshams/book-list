@@ -14,13 +14,18 @@ body {
   margin: 20px auto;
   width: 90%;
   max-width: 700px;
-  color: #eee;
+  color: white;
+  background: rgba(241, 183, 183, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .navbar {
   padding: 10px 20px;
   text-align: center;
-  background: #6d3d6d;
 }
 
 .navbar h1 {
@@ -37,7 +42,7 @@ body {
 }
 
 .book-list li {
-  background: #6d3d6d;
+  background: rgba(241, 183, 183, 0.25);
   border-radius: 4px;
   padding: 10px;
   cursor: pointer;
