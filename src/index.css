@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #553055;
+  background-image: url(./images/book.jpg);
+  object-fit: contain;
 }
 
 .App {
