@@ -56,13 +56,13 @@ body {
 
 .book-list .title {
   font-weight: bold;
-  color: #fff;
+  color: white;
   font-size: 1.2em;
 }
 
 .book-list .author {
   font-size: 0.9em;
-  color: #ddd;
+  color: white;
 }
 
 .empty {
@@ -79,15 +79,28 @@ input[type='text'] {
   padding: 10px;
   box-sizing: border-box;
   margin: 6px 0;
-  background: #3c1f3c;
-  color: #fff;
+  color: white;
   border: 0;
+  outline: none;
+  background: rgba(241, 183, 183, 0.25);
+  border-radius: 4px;
+}
+
+input::placeholder {
+  color: white;
 }
 
 input[type='submit'] {
   margin: 10px auto;
-  background: #eee;
+  background: rgba(241, 183, 183, 0.25);
   border: 0;
   padding: 6px 20px;
   display: block;
+  cursor: pointer;
+  color: white;
+  outline: none;
+}
+
+input[type='submit']:hover {
+  opacity: 0.8;
 }
